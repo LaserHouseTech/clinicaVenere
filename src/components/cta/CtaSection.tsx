@@ -24,9 +24,9 @@ export const CtaSection: React.FC = () => {
           transition={{ duration: 0.95, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
           className="relative rounded-[28px] sm:rounded-[36px] bg-[#0c1015] border border-white/[0.08] overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.65)]"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
-            {/* Left Content */}
-            <div className="lg:col-span-6 xl:col-span-6 p-6 sm:p-12 lg:p-14 xl:p-16 flex flex-col items-start z-10 bg-[#0c1015]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch">
+            {/* Content (below on mobile, left on desktop) */}
+            <div className="order-2 lg:order-1 lg:col-span-6 xl:col-span-6 p-6 sm:p-12 lg:p-14 xl:p-16 flex flex-col items-start justify-center z-10 bg-[#0c1015]">
               {/* Tag */}
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#005cdb]/80 bg-[#071324]/80 mb-5 sm:mb-7">
                 <span className="w-2 h-2 rounded-full bg-[#0074ff] shrink-0 shadow-[0_0_8px_#0074ff]" />
@@ -65,8 +65,8 @@ export const CtaSection: React.FC = () => {
               </a>
             </div>
 
-            {/* Right Photo */}
-            <div className="lg:col-span-6 xl:col-span-6 relative h-[320px] sm:h-[480px] lg:h-full min-h-[320px] sm:min-h-[520px] lg:min-h-[580px] w-full overflow-hidden">
+            {/* Photo (above on mobile, right on desktop) */}
+            <div className="order-1 lg:order-2 lg:col-span-6 xl:col-span-6 relative h-[280px] sm:h-[400px] lg:h-full min-h-[280px] sm:min-h-[400px] lg:min-h-[580px] w-full overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
                 style={{
@@ -74,7 +74,7 @@ export const CtaSection: React.FC = () => {
                 }}
               />
               {/* Subtle gradient vignette for depth */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-[#0c1015]/40 lg:via-transparent lg:to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1015] via-transparent to-transparent lg:bg-gradient-to-r lg:from-[#0c1015]/40 lg:via-transparent lg:to-transparent" />
 
               {/* Bottom Right Floating Badge */}
               <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 left-4 sm:left-auto sm:max-w-[320px] z-10">

@@ -42,7 +42,7 @@ export const ExperienceSection: React.FC = () => {
           <div className="lg:col-span-5 xl:col-span-4 flex justify-center lg:justify-start w-full">
             <div
               onClick={togglePlay}
-              className="relative w-full max-w-[380px] sm:max-w-[420px] h-[300px] sm:h-[460px] lg:h-[540px] rounded-[24px] sm:rounded-[36px] overflow-hidden shadow-[0_12px_36px_rgba(0,0,0,0.08)] group cursor-pointer bg-[#0b141d]"
+              className="relative w-full max-w-[300px] sm:max-w-[340px] lg:max-w-[370px] aspect-[9/16] rounded-[24px] sm:rounded-[36px] overflow-hidden shadow-[0_12px_36px_rgba(0,0,0,0.08)] group cursor-pointer bg-[#0b141d]"
             >
               {/* HTML5 Video Element */}
               <video
@@ -51,7 +51,7 @@ export const ExperienceSection: React.FC = () => {
                 playsInline
                 loop
                 onEnded={() => setIsPlaying(false)}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover aspect-[9/16] transition-transform duration-700 group-hover:scale-105"
               />
 
               {/* Overlay (shown or reduced depending on playing state) */}
