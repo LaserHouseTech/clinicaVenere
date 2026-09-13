@@ -1,0 +1,6 @@
+{
+  "name": "Vênere | Saúde e Estética",
+  "description": "Clínica Vênere em Gramado - RS: Medicina estética de alta precisão, saúde integrativa e protocolos de longevidade.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
